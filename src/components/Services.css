@@ -1,0 +1,95 @@
+/* Section wrapper */
+
+#services {
+  padding: 100px 0 !important;
+  max-width: none !important;
+  margin: 0 !important;
+  background-color: #0D0D0D	;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+
+.services-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+  margin-bottom: 60px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#services h2 {
+  font-size: 6rem;
+  font-weight: 400;
+  font-family: 'Silk Serif', serif;
+  margin: 0;
+  color: #F1FAEE;
+}
+
+.see-more {
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 12px 20px;
+  border: 2px solid #000;
+  border-radius: 999px;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.see-more:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* Grid layout for cards */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 40px;
+  padding: 0 60px;
+  box-sizing: border-box;
+}
+
+/* Individual card style */
+.service-card {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card h3 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-family: 'Silk Serif', sans-serif;
+}
+
+.service-card p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+
+  .service-card h3 {
+    font-size: 2.2rem;
+  }
+
+  .service-card p {
+    font-size: 1rem;
+  }
+}

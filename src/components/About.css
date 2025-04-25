@@ -1,0 +1,57 @@
+.about {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  padding: 20PX; /* remove padding to touch edges */
+  gap: 40px;
+  background-color: #0D0D0D;
+  box-sizing: border-box;
+}
+
+/* Individual halves */
+.about-image,
+.about-content {
+  flex: 1;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+/* Image section */
+.about-image {
+  margin-left: 0;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 20px;
+}
+
+/* Content section */
+.about-content {
+  background-color: #fff;
+  padding: 60px;
+  margin-right: 0 !important;
+}
+
+.about-content h2 {
+  font-size: 5rem;
+  font-weight: 400;
+  font-family: 'Silk Serif', serif;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #222;
+  margin-bottom: 20px;
+}

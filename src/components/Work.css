@@ -1,0 +1,113 @@
+#work {
+  padding: 100px 0 !important;
+  max-width: none !important;
+  margin: 0 !important;
+  background-color: #0D0D0D	;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+
+
+
+.work-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+  margin-bottom: 60px;
+  width: 100%;
+  box-sizing: border-box;
+  color: #F1FAEE;
+}
+
+#work h2 {
+  font-size: 6rem;
+  font-weight: 400;
+  font-family: 'Silk Serif', serif;
+  margin: 0;
+}
+
+.see-more {
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 12px 20px;
+  border: 2px solid #F1FAEE !important;
+  border-radius: 999px;
+  color: #F1FAEE !important;
+  transition: all 0.3s ease;
+}
+
+.see-more:hover {
+  background: #000;
+  color: #fff;
+}
+
+.bento-grid {
+  width: 100vw !important;;
+  padding: 0 60px!important;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  box-sizing: border-box;
+}
+
+/* Card styling */
+.bento-card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.bento-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 0.8rem;
+  padding: 12px 16px 0;
+  color: #444;
+}
+
+.tags span {
+  background: #f0f0f0;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+.bento-card h3 {
+  font-family: 'Silk Serif', serif;
+  font-size: 1.5rem;
+  padding: 10px 16px 20px;
+  color: #000;
+}
+
+/* Special spans */
+.bento-card.wide {
+  grid-column: span 2;
+}
+
+.bento-card.tall {
+  grid-row: span 2;
+}
+
+@media (max-width: 768px) {
+  .bento-card.wide,
+  .bento-card.tall {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  #work h2 {
+    font-size: 4rem;
+  }
+}
