@@ -1,0 +1,84 @@
+/* Achievements.css */
+
+/* Section wrapper */
+#achievements {
+  padding: 100px 0;
+  margin: 0;
+  width: 100vw;
+  background-color: #0D0D0D;
+  box-sizing: border-box;
+}
+
+/* Header */
+.achievements-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+  margin-bottom: 60px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.achievements-title {
+  font-size: 6rem;
+  font-weight: 400;
+  font-family: 'Silk Serif', serif;
+  color: #F1FAEE;
+  margin: 0;
+}
+
+/* 4-column grid, fixed 12 items → 3 rows */
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  padding: 0 60px;
+  box-sizing: border-box;
+}
+
+/* Cards: fixed height + padding */
+.achievement-card {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+  width: 300px;
+}
+.achievement-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Static font-sizes to match your image */
+.achievement-card h3 {
+  font-size: 24px;    /* title size */
+  font-weight: 500;
+  margin-bottom: 16px;
+  font-family: 'Silk Serif', sans-serif;
+}
+
+.achievement-card p {
+  font-size: 16px;    /* issuer text */
+  line-height: 1.6;
+  color: #333;
+  margin: 0 0 8px;
+}
+
+.achievement-card .year {
+  font-size: 14px;    /* year label */
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+/* Mobile fallback: collapse to 1 column */
+@media (max-width: 768px) {
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+}

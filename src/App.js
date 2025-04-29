@@ -9,6 +9,7 @@ import Services from './components/Services';
 import About from './components/About';
 import Footer from './components/Footer';
 import FullWork from './components/FullWork';
+import Achievements from './components/AchievementsScroll';
 
 import './App.css';
 
@@ -21,6 +22,7 @@ const HomePage = () => (
       <Work />
       <About />
       <Services />
+      <Achievements />
     </main>
     <Footer />
   </>
