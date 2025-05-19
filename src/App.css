@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: 'Silk Serif';
-  src: url('/Users/sandamininayanathara/Documents/portfolio/sandu-portfolio/src/fonts/Silk Serif Regular.otf') format('opentype');
+  src: url('./fonts/SilkSerif-Regular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
