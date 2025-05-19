@@ -72,7 +72,7 @@ section {
 .hamburger span {
   display: block;
   height: 2px;
-  background: #F1FAEE;
+  background: #F1FAEE !important; /* ← force the color */
   transition: transform 0.3s ease;
 }
 .hamburger.open span:nth-child(1) {
@@ -153,7 +153,7 @@ section {
 }
 
 @media (max-width: 480px) {
-  .hamburger{color: #F1FAEE !important;}
+  .hamburger span{color: #F1FAEE !important;}
   .logo { font-size: 20px; }
   .nav-links li a { font-size: 16px; }
   .cta-button a { padding: 10px 20px; font-size: 14px; }
