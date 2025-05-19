@@ -117,7 +117,7 @@
     gap: 16px;
   }
   .achievements-title {
-    font-size: clamp(1.8rem, 8vw, 2.5rem);
+    font-size: clamp(1.5rem, 10vw, 2.5rem)!important; /* Same as work h2 on mobile */
   }
   .achievements-grid {
     grid-template-columns: 1fr;

@@ -67,6 +67,7 @@ section {
   border: none;
   cursor: pointer;
   z-index: 1100;
+  color: #F1FAEE !important;
 }
 .hamburger span {
   display: block;

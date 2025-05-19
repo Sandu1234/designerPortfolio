@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './Intro.css';
 
-const text = `I am a digital-first brand identity & web designer and a Webflow developer. 
+const text = `I am a digital-first brand identity & web designer and a Web developer. 
 I help companies connect with their audience, expand their reach, and achieve greater commercial success.`;
 
 const Intro = () => {

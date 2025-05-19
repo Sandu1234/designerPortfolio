@@ -16,7 +16,7 @@ const About = () => (
       From leading UX strategies for AI-powered healthcare platforms like BreastGuard to building engaging websites for major brands like Elephant House, I thrive at the intersection of design, technology, and user research. I also enjoy mentoring aspiring designers and contributing to the design community through blogs and workshops.
       </p>
       <p>
-Beyond work, I’m passionate about photography, traveling, running, resistance training, and volleyball.
+Beyond work, I’m passionate about photography, traveling, music.
 </p>
     </div>
   </section>

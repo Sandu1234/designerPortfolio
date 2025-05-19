@@ -143,7 +143,8 @@
   }
 
   #work h2 {
-    font-size: clamp(2rem, 8vw, 3rem);
+    font-size: clamp(1.5rem, 10vw, 2.5rem)!important; /* Same as work h2 on mobile */
+
   }
 
   .see-more {
