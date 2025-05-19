@@ -53,14 +53,15 @@ const Footer = () => {
         <div className="footer-col">
           <a href="#work">Work</a>
           <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-          <a href="#blog">Blog</a>
+          <a href="https://mail.google.com/mail/?view=cm&to=sandunayanathara99@gmail.com">Contact</a>
+          <a href="https://medium.com/@sandunayanathara99">Blog</a>
         </div>
         <div className="footer-col">
-          <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
-          <a href="https://twitter.com" target="_blank" rel="noreferrer">Twitter</a>
-          <a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href="https://behance.net" target="_blank" rel="noreferrer">Behance</a>
+          <a href="https://www.instagram.com/orbitech_official?igsh=MWUzNmMwcDJxODFlbw==&utm_source=ig_contact_invite
+" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="https://github.com/Sandu1234" target="_blank" rel="noreferrer">Github</a>
+          <a href="https://www.linkedin.com/in/sandamini-nayanathara/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://www.behance.net/sandaminayanat" target="_blank" rel="noreferrer">Behance</a>
         </div>
       </div>
 

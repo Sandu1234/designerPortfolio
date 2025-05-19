@@ -1,3 +1,6 @@
+/* Responsive Hero Marquee Component */
+
+// src/components/Hero.jsx
 import React from 'react';
 import './Hero.css';
 

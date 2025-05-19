@@ -1,92 +1,127 @@
 import React from 'react';
 import Header from './Header';          
 import './Work.css';
-import img1 from '../assets/1.jpeg';
+import img1 from '../assets/1.png';
+import img2 from '../assets/2.png';
+import img3 from '../assets/3.png';
+import img4 from '../assets/4.png';
+import img5 from '../assets/5.png';
+import img6 from '../assets/6.png';
+import img7 from '../assets/7.png';
+import img8 from '../assets/8.png';
+import img9 from '../assets/9.png';
+import img10 from '../assets/10.png';
+import img11 from '../assets/11.png';
+import img12 from '../assets/12.png';
 
 const projects = [
   {
-    title: 'Arriving at the station of great literature',
+    title: 'Smart Payment Tracker – Dark Mode UI Design',
     date: 'May 2023',
-    tags: ['Branding', 'Experience Design'],
-    image: img1,
+    tags: ['Innovation', 'Experience Design'],
+    image: img2,
     span: 'tall',
+    link: 'https://www.behance.net/gallery/223515887/Smart-Payment-Tracker-Dark-Mode-UI-Design',
+
   },
   {
-    title: 'Connecting the flavour of nature for promo',
+    title: 'Productivity Management AI tool',
     date: 'Apr 2023',
-    tags: ['Branding', 'Web Design'],
+    tags: ['Branding', 'Innovation'],
     image: img1,
     span: 'wide',
+    link: 'https://www.behance.net/gallery/223515887/Smart-Payment-Tracker-Dark-Mode-UI-Design',
+
   },
   {
-    title: 'Minimalist Website Concept',
+    title: 'Fit Sixes Cricket Fiesta Mobile App',
     date: 'Jun 2023',
-    tags: ['Webflow', 'Motion'],
-    image: img1,
+    tags: ['Competition', 'Motion'],
+    image: img3,
     span: '',
+    link: 'https://www.behance.net/gallery/215438625/FIT-SIXES-2023',
+
   },
   {
-    title: 'Typographic Identity',
+    title: 'Space Theme Website',
     date: 'Mar 2023',
     tags: ['Branding'],
-    image: img1,
+    image: img4,
     span: '',
+    link: 'https://www.behance.net/gallery/215442407/Space-Theme-Website',
+
   },
   {
-    title: 'Minimalist Website Concept',
+    title: 'Mood Based Nature Escape App',
     date: 'Jun 2023',
-    tags: ['Webflow', 'Motion'],
-    image: img1,
+    tags: ['Camping', 'Motion'],
+    image: img5,
     span: '',
+    link: 'https://www.behance.net/gallery/223417467/Travel-In-Tents-A-Mood-Based-Nature-Escape-App',
+
   },
   {
-    title: 'Typographic Identity',
-    date: 'Mar 2023',
-    tags: ['Branding'],
-    image: img1,
+    title: 'BreastGuard Medical Webapp',
+    date: 'Mar 2024',
+    tags: ['Medical'],
+    image: img6,
     span: '',
+    link: 'https://breastguard.netlify.app',
+
   },
   {
-    title: 'Arriving at the station of great literature',
-    date: 'May 2023',
+    title: 'Orbitech Global Official Website',
+    date: 'Mar 2025',
     tags: ['Branding', 'Experience Design'],
-    image: img1,
+    image: img7,
     span: 'tall',
+    link: 'https://orbitechglobal.com',
+
   },
   {
-    title: 'Connecting the flavour of nature for promo',
-    date: 'Apr 2023',
+    title: 'Elephant House Superheroes Competition Official Website',
+    date: 'Jan 2025',
     tags: ['Branding', 'Web Design'],
-    image: img1,
+    image: img8,
     span: 'wide',
+    link: 'https://ehsuperheroes.lk',
+
   },
   {
-    title: 'Minimalist Website Concept',
-    date: 'Jun 2023',
-    tags: ['Webflow', 'Motion'],
-    image: img1,
+    title: 'The Railway View Villa Official Website',
+    date: 'Feb 2025',
+    tags: ['Branding', 'Hotel'],
+    image: img9,
     span: '',
+    link: 'https://therailwayviewvilla.com',
+
   },
   {
-    title: 'Typographic Identity',
+    title: 'Skin Care Product Website',
     date: 'Mar 2023',
     tags: ['Branding'],
-    image: img1,
+    image: img10,
     span: '',
+    link: 'https://www.behance.net/gallery/217519019/Skin-Care-Product-Website',
+
   },
   {
-    title: 'Minimalist Website Concept',
-    date: 'Jun 2023',
-    tags: ['Webflow', 'Motion'],
-    image: img1,
+    title: 'Minimalist Productivity Dashboard',
+    date: 'Jan 2025',
+    tags: ['Product', 'Dashboard'],
+    image: img11,
     span: '',
+    link: 'https://www.behance.net/gallery/223512273/MindBalance-A-Minimalist-Productivity-Dashboard',
+
   },
   {
-    title: 'Typographic Identity',
+    title: 'Online Shopping Site',
     date: 'Mar 2023',
-    tags: ['Branding'],
-    image: img1,
+    tags: ['E-Commerce'],
+    image: img12,
     span: '',
+    link: 'https://www.behance.net/gallery/221622097/Online-Shopping-Site',
+
   },
 ];
 
@@ -101,19 +136,25 @@ const Work = () => (
       </div>
 
       <div className="bento-grid">
-        {projects.map((project, index) => (
-          <div className={`bento-card ${project.span}`} key={index}>
-            <img src={project.image} alt={project.title} />
-            <div className="tags">
-              <span>{project.date}</span>
-              {project.tags.map((tag, i) => (
-                <span key={i}>{tag}</span>
-              ))}
-            </div>
-            <h3>{project.title}</h3>
-          </div>
+  {projects.map((project, index) => (
+    <a
+      href={project.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      key={index}
+      className={`bento-card ${project.span}`}
+    >
+      <img src={project.image} alt={project.title} />
+      <div className="tags">
+        <span>{project.date}</span>
+        {project.tags.map((tag, i) => (
+          <span key={i}>{tag}</span>
         ))}
       </div>
+      <h3>{project.title}</h3>
+    </a>
+  ))}
+</div>
     </section>
   </>
 );

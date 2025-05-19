@@ -10,7 +10,7 @@ import About from './components/About';
 import Footer from './components/Footer';
 import FullWork from './components/FullWork';
 import Achievements from './components/AchievementsScroll';
-
+import Blog from './components/blog';
 import './App.css';
 
 const HomePage = () => (
@@ -33,6 +33,7 @@ const App = () => (
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/fullwork" element={<FullWork />} />
+      <Route path="/blog" element={<Blog />} />
     </Routes>
   </Router>
 );

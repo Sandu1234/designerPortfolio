@@ -10,18 +10,20 @@
 }
 
 
+/* Base styles */
 .services-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 60px;
   margin-bottom: 60px;
+  margin-top: 40px !important;
   width: 100%;
   box-sizing: border-box;
 }
 
 #services h2 {
-  font-size: 6rem;
+  font-size: clamp(4rem, 5vw, 7rem);
   font-weight: 400;
   font-family: 'Silk Serif', serif;
   margin: 0;
@@ -92,4 +94,54 @@
   .service-card p {
     font-size: 1rem;
   }
+}
+
+/* Large Desktops (>1024px) */
+@media (min-width: 1025px) {
+  .services-header {
+    padding: 0 80px;
+    margin-bottom: 80px;
+  }
+  #services h2 {
+    font-size: clamp(4rem, 5vw, 7rem);
+  }
+}
+
+/* Desktop & Tablet (<=1024px) */
+@media (max-width: 1024px) {
+  .services-header {
+    padding: 0 40px;
+    margin-bottom: 50px;
+  }
+  #services h2 {
+    font-size: clamp(3rem, 6vw, 5rem) !important;
+  }
+}
+
+/* Small Tablets (<=768px) */
+@media (max-width: 768px) {
+  .services-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 0 30px;
+    margin-bottom: 40px;
+  }
+  #services h2 {
+    font-size: clamp(2.5rem, 7vw, 4rem)!important;
+  }
+}
+
+/* Mobile (<=480px) */
+@media (max-width: 480px) {
+  .services-header {
+    padding: 0 16px;
+    margin-bottom: 30px;
+    gap: 16px;
+  }
+  
+    #services h2 {
+      font-size: clamp(1.5rem, 10vw, 2.5rem)!important; /* Same as work h2 on mobile */
+    }
+  
 }

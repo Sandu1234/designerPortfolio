@@ -10,10 +10,14 @@ const About = () => (
     <div className="about-content">
       <h2>Hello there,<br />I'm Sandamini</h2>
       <p>
-      I design bespoke brand identities and websites that fit each company like a well-tailored suit, ensuring your brand stands out digitally and physically. Specialising in brand identity design, I’m also a web designer and Webflow developer with a keen eye for typography and motion design.</p>
-
+      I'm a results-driven UI/UX Designer and Software Engineer with 5+ years of experience creating seamless digital experiences across eCommerce, SaaS, and FinTech platforms. With a strong foundation in both design and development, I specialize in brand identity, responsive web design, and Webflow development—always with a sharp eye for typography, accessibility, and motion.
+</p>
       <p>
-      Outside work, I enjoy photography, travelling, and staying active through running, resistance training, and playing volleyball.      </p>
+      From leading UX strategies for AI-powered healthcare platforms like BreastGuard to building engaging websites for major brands like Elephant House, I thrive at the intersection of design, technology, and user research. I also enjoy mentoring aspiring designers and contributing to the design community through blogs and workshops.
+      </p>
+      <p>
+Beyond work, I’m passionate about photography, traveling, running, resistance training, and volleyball.
+</p>
     </div>
   </section>
 );

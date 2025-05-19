@@ -1,18 +1,19 @@
 .about {
   display: flex;
+  flex-direction: row;
   width: 100vw;
   height: 100vh;
-  padding: 20PX; /* remove padding to touch edges */
+  padding: 0;
   gap: 40px;
   background-color: #0D0D0D;
   box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
-/* Individual halves */
+/* Image and content sections */
 .about-image,
 .about-content {
   flex: 1;
-  height: 100%;
   border-radius: 20px;
   overflow: hidden;
   display: flex;
@@ -21,9 +22,9 @@
   box-sizing: border-box;
 }
 
-/* Image section */
+/* Image box */
 .about-image {
-  margin-left: 0;
+  margin: 0;
 }
 
 .about-image img {
@@ -34,18 +35,19 @@
   border-radius: 20px;
 }
 
-/* Content section */
+/* Content box */
 .about-content {
   background-color: #fff;
   padding: 60px;
-  margin-right: 0 !important;
+  margin: 0;
+  border-radius: 20px;
 }
 
 .about-content h2 {
-  font-size: 5rem;
+  font-size: clamp(2.5rem, 5vw, 5rem);
   font-weight: 400;
   font-family: 'Silk Serif', serif;
-  margin: 0 0 20px 0;
+  margin: 0 0 20px;
   line-height: 1.2;
 }
 
@@ -54,4 +56,31 @@
   line-height: 1.8;
   color: #222;
   margin-bottom: 20px;
+}
+@media (max-width: 1024px) {
+  .about {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .about-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-image img {
+    width: 100%;
+    height: auto; /* ✅ Preserves full image height */
+    object-fit: contain; /* ✅ Shows the entire image */
+    border-radius: 20px;
+    display: block;
+  }
+
+  .about-content {
+    width: 100%;
+    border-radius: 20px;
+    padding: 40px 30px;
+    margin-top: 20px;
+  }
 }

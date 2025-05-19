@@ -1,34 +1,37 @@
+/*
+  Styles: src/components/Intro.css
+*/
+
 .intro {
   width: 100%;
-  background-color: #0D0D0D	;
-  padding: 100px 20px;
+  background-color: #0D0D0D;
+  padding: clamp(60px, 10vw, 100px) 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.intro-text {
-  width: 100%;
   text-align: center;
 }
 
+.intro-text {
+  max-width: 800px;
+  width: 100%;
+}
+
 .intro-text p {
-  font-size: 3rem;
+  font-size: clamp(1.5rem, 4vw, 3rem);
   line-height: 1.5;
   color: #F1FAEE;
   font-weight: 400;
-  margin-bottom: 40px;
+  margin-bottom: clamp(20px, 5vw, 40px);
   display: inline-block;
 }
 
-/* Hide by default */
+/* Word fade-in */
 .fade-word {
   opacity: 0;
   transform: translateY(20px);
   display: inline-block;
 }
-
-/* Animate only when in view */
 .fade-word.animate {
   animation: fadeIn 0.6s ease forwards;
 }
@@ -36,6 +39,39 @@
 @keyframes fadeIn {
   to {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(0);
   }
 }
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .intro {
+    padding: clamp(50px, 8vw, 80px) 16px;
+  }
+  .intro-text p {
+    font-size: clamp(1.4rem, 5vw, 2.5rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .intro {
+    padding: clamp(40px, 6vw, 60px) 12px;
+  }
+  .intro-text p {
+    font-size: clamp(1.2rem, 6vw, 2rem);
+    line-height: 1.4;
+    margin-bottom: clamp(16px, 4vw, 30px);
+  }
+}
+
+@media (max-width: 480px) {
+  .intro {
+    padding: clamp(30px, 8vw, 50px) 8px;
+  }
+  .intro-text p {
+    font-size: clamp(1rem, 8vw, 1.6rem);
+    line-height: 1.3;
+    margin-bottom: clamp(12px, 5vw, 24px);
+  }
+}
+

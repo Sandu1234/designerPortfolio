@@ -5,22 +5,22 @@ const services = [
   {
     title: 'Digital First Branding',
     description:
-      "I specialise in creating digital-first branding that captures your brand's essence and connects with your audience across all digital platforms. From logos to social media graphics, I design cohesive brand identities that resonate in the online world, ensuring your brand remains consistent, memorable, and impactful in the digital age.",
+      "I build digital-first brand identities that go beyond just visuals strategically aligning every touchpoint with your brand's purpose. I help brands show up consistently and meaningfully across digital platforms, ensuring they’re instantly recognizable and built for scalability in today’s fast-paced environment.",
   },
   {
     title: 'Web Design & Development',
     description:
-      "I design and develop user-friendly websites that blend aesthetics with functionality. Each site is tailored to meet your specific needs, with responsive layouts and intuitive navigation. My goal is to create an engaging online experience that not only looks great but also drives results and keeps users coming back.",
+      "I design and develop fast, responsive, and visually compelling websites that combine strong UX foundations with frontend best practices. Every website is tailored to your goals optimized for performance, and engagement, whether you're launching a product, telling your story, or scaling an online presence.",
   },
   {
     title: 'UI/UX Design',
     description:
-      "I craft intuitive and visually stunning interfaces, ensuring seamless user journeys across web and mobile platforms. From wireframes to final design, I align each touchpoint with user needs and business goals.",
+      "I create user-centered interfaces that are both functional and delightful. Leveraging design thinking, user research, and usability testing, I craft intuitive web and mobile experiences—from low-fidelity wireframes to high-fidelity prototypes that drive engagement, reduce friction, and align with your business outcomes.",
   },
   {
     title: 'Creative Direction',
     description:
-      "I provide strategic design leadership, guiding the visual storytelling of your brand. Whether it's a campaign, launch, or product, I ensure the creative output is aligned, effective, and inspiring.",
+      "I offer end-to-end creative direction, bringing cohesion and clarity to brand and product design efforts. Whether shaping a campaign narrative or leading cross-functional design execution, I ensure your visual identity and messaging are emotionally resonant, strategically sound, and creatively differentiated.",
   },
 ];
 

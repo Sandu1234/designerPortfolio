@@ -1,3 +1,4 @@
+// src/components/Intro.jsx
 import React, { useEffect, useRef, useState } from 'react';
 import './Intro.css';
 
@@ -15,19 +16,13 @@ const Intro = () => {
           setAnimate(true);
         }
       },
-      {
-        threshold: 0.5, // Adjust to trigger halfway into view
-      }
+      { threshold: 0.5 }
     );
-  
-    const currentRef = introRef.current;
-    if (currentRef) observer.observe(currentRef);
-  
-    return () => {
-      if (currentRef) observer.unobserve(currentRef);
-    };
+
+    const current = introRef.current;
+    if (current) observer.observe(current);
+    return () => { if (current) observer.unobserve(current); };
   }, [animate]);
-  
 
   const words = text.split(' ');
 

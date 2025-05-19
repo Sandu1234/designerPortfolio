@@ -1,54 +1,46 @@
-/* Silk Serif Font Import (you must have the font file in /fonts folder) */
+/*
+  Styles: src/components/Header.css
+*/
+
 @font-face {
   font-family: 'Silk Serif';
-  src: url('/Users/sandamininayanathara/Documents/portfolio/sandu-portfolio/src/fonts/Silk Serif Regular.otf');
+  src: url('/Users/sandamininayanathara/Documents/portfolio/sandu-portfolio/src/fonts/Silk Serif Regular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
-/* Full reset to remove gaps, padding, overflow */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 html, body {
   width: 100%;
   overflow-x: hidden;
   font-family: 'Silk Serif', serif;
   background-color: #0D0D0D;
 }
-
-
-/* Links */
 a {
   color: inherit;
   text-decoration: none;
   transition: opacity 0.3s ease;
 }
-
-a:hover {
-  opacity: 0.7;
-}
-
-/* Layout */
+a:hover { opacity: 0.7; }
 section {
   padding: 100px 20px;
   max-width: 1100px;
   margin: auto;
 }
 
-/* Header Styles */
 .header {
   position: fixed;
   top: 0;
   width: 100%;
   background-color: #0D0D0D;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
   z-index: 1000;
   padding: 20px 0;
 }
-
 .header-container {
   max-width: 1400px;
   margin: 0 auto;
@@ -57,18 +49,43 @@ section {
   align-items: center;
   justify-content: space-between;
 }
-
 .logo {
   font-family: 'Silk Serif', serif;
   font-size: 24px;
   font-weight: 400;
-  position: relative;
   color: #F1FAEE;
 }
 
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+}
+.hamburger span {
+  display: block;
+  height: 2px;
+  background: #F1FAEE;
+  transition: transform 0.3s ease;
+}
+.hamburger.open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
 
-/* RIGHT SECTION (nav + button) */
-.header-right {
+/* Navigation Links */
+.nav-links-container {
   display: flex;
   align-items: center;
   gap: 40px;
@@ -78,22 +95,15 @@ section {
   list-style: none;
   display: flex;
   gap: 30px;
-  margin: 0;
-  padding: 0;
 }
-
 .nav-links li a {
   font-size: 18px;
   font-weight: 500;
   color: #F1FAEE;
   transition: opacity 0.3s ease;
 }
+.nav-links li a:hover { opacity: 0.6; }
 
-.nav-links li a:hover {
-  opacity: 0.6;
-}
-
-/* CTA Button */
 .cta-button a {
   display: flex;
   align-items: center;
@@ -106,13 +116,44 @@ section {
   border: 2px solid #F1FAEE;
   transition: all 0.3s ease;
 }
+.cta-button a .arrow { margin-left: 12px; font-size: 18px; }
+.cta-button a:hover { background-color: #111; color: #fff; }
 
-.cta-button a .arrow {
-  margin-left: 12px;
-  font-size: 18px;
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .header-container { padding: 0 20px; }
+  .nav-links-container { gap: 20px; }
 }
 
-.cta-button a:hover {
-  background-color: #111;
-  color: #fff;
+@media (max-width: 768px) {
+  .hamburger { display: flex; }
+
+  .nav-links-container {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    height: 100vh;
+    background-color: #0D0D0D;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    transition: right 0.3s ease;
+  }
+  .nav-links-container.open { right: 0; }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .cta-button { margin-top: 16px; }
+}
+
+@media (max-width: 480px) {
+  .hamburger{color: #F1FAEE !important;}
+  .logo { font-size: 20px; }
+  .nav-links li a { font-size: 16px; }
+  .cta-button a { padding: 10px 20px; font-size: 14px; }
 }

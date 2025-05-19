@@ -100,14 +100,58 @@
   grid-row: span 2;
 }
 
+
+/* Large Desktops (>1024px) */
+@media (min-width: 1025px) {
+  .work-header {
+    padding: 0 80px;
+    margin-bottom: 80px;
+  }
+  #work h2 {
+    font-size: clamp(4rem, 5vw, 7rem);
+  }
+  .see-more {
+    font-size: clamp(1rem, 1.2vw, 1.2rem);
+    padding: clamp(10px, 1vw, 16px) clamp(18px, 2vw, 24px);
+  }
+}
+
+/* Desktop & Tablet (<=1024px) */
+@media (max-width: 1024px) {
+  .work-header {
+    padding: 0 40px;
+    margin-bottom: 50px;
+  }
+  #work h2 {
+    font-size: clamp(3rem, 6vw, 5rem);
+  }
+  .see-more {
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
+    padding: clamp(8px, 1.5vw, 14px) clamp(16px, 2vw, 20px);
+  }
+}
+
 @media (max-width: 768px) {
-  .bento-card.wide,
-  .bento-card.tall {
-    grid-column: span 1;
-    grid-row: span 1;
+  .work-header {
+    /* REMOVE flex-direction: column */
+    flex-direction: row; /* force row alignment */
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 0 20px;
+    margin-bottom: 30px;
   }
 
   #work h2 {
-    font-size: 4rem;
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+
+  .see-more {
+    font-size: clamp(0.7rem, 4vw, 0.9rem);
+    padding: clamp(4px, 3vw, 8px) clamp(8px, 4vw, 12px);
   }
 }
+
+
+
+
